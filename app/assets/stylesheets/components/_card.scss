@@ -15,6 +15,7 @@
 }
 
 .card-remove-link {
+  text-decoration: none;
   color: white;
   border-radius: 50%;
   border: 1px solid white;
@@ -33,5 +34,21 @@
     color: white;
     text-decoration: none;
     opacity: 1;
+  }
+}
+
+.card-tags {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  width: 80%;
+  span {
+    background: $blue;
+    font-size: .7em;
+    padding: 2px 4px;
+    border-radius: 3px;
+  }
+  a {
+    color: white;
   }
 }
