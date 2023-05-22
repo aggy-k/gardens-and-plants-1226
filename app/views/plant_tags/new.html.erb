@@ -1,0 +1,9 @@
+<div class="col-4 mx-auto">
+  <h1>PlantTags#new</h1>
+  <p>Find me in app/views/plant_tags/new.html.erb</p>
+
+  <%= simple_form_for [@plant, @plant_tag] do |f| %>
+    <%= f.association :tag, collection: Tag.all, input_html: {multiple: true, class: "multiple-select", data: {controller: "tom-select"}}, include_hidden: false %>
+    <%= f.submit %>
+  <% end %>
+</div>
